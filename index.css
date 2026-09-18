@@ -301,19 +301,19 @@ Button:hover {
 .Services-Button {
   background-color: black;
   border: 1px solid black;
-   animation:Services-title 1s ease-out;
+  animation: Services-title 1s ease-out;
 
 }
 
 .Services-card.Intro h1 {
   font: 32px lato, sans-serif;
-  animation:Services-title 1s ease-out;
+  animation: Services-title 1s ease-out;
 }
 
 .Services-card.Intro p {
   font: 16px hebbo, sans-serif;
   color: #666666;
-   animation:Services-title 1s ease-out;
+  animation: Services-title 1s ease-out;
 }
 
 .Services-card h1 {
@@ -396,7 +396,54 @@ Button:hover {
     transform: translateX(-300px);
   }
 
-  to{
+  to {
     transform: translateX(0px);
   }
+}
+
+.Projects-Header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 60px;
+  top: 100px;
+}
+
+.portfolio {
+  position: absolute;
+  top: -50px;
+  font-size: 120px;
+  color: #f2f2f2;
+  z-index: 0;
+}
+
+.Projects-Header h1 {
+  position: relative;
+  z-index: 1;
+}
+
+.Projects-Header p {
+  color: #666666;
+  font-size: 20px;
+}
+
+.Project-Categories {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 150px;
+  font: 14px heebo, sans-serif;
+
+}
+
+.Projects-Images {
+  display: flex;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.Project-Card {
+  position: relative;
+  overflow: hidden;
 }
