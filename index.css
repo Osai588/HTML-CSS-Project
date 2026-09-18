@@ -301,16 +301,19 @@ Button:hover {
 .Services-Button {
   background-color: black;
   border: 1px solid black;
+   animation:Services-title 1s ease-out;
 
 }
 
 .Services-card.Intro h1 {
   font: 32px lato, sans-serif;
+  animation:Services-title 1s ease-out;
 }
 
 .Services-card.Intro p {
   font: 16px hebbo, sans-serif;
   color: #666666;
+   animation:Services-title 1s ease-out;
 }
 
 .Services-card h1 {
@@ -385,4 +388,15 @@ Button:hover {
 
 .Services-card.Intro:hover p {
   color: #666666;
+}
+
+
+@keyframes Services-title {
+  from {
+    transform: translateX(-300px);
+  }
+
+  to{
+    transform: translateX(0px);
+  }
 }
