@@ -407,6 +407,7 @@ Button:hover {
 }
 
 .Projects-Header {
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -491,7 +492,7 @@ Button:hover {
   margin-top: 70px;
   display: flex;
   justify-content: center;
-  gap:80px;
+  gap: 80px;
   width: 100%;
 }
 
@@ -499,12 +500,24 @@ Button:hover {
   height: 400px;
   width: 400px;
   position: relative;
+  overflow: visible;
 }
 
 .Team-image {
   width: 100%;
   height: 100%;
-  z-index: -1;
+  object-fit: cover;
+  display: block;
+}
+
+.Team-Card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  transition: 0.4s ease;
+  z-index: 1;
 }
 
 .Member-Details {
@@ -519,31 +532,90 @@ Button:hover {
   margin: -20px auto 0;
   margin-top: -20px;
   z-index: 2;
-  transform: translateY(-5%);
+  transform: translateY(-10%);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
-.Team-Card-Intro{
- height: 600px;
+
+.Team-Card-Intro {
+  height: 600px;
   width: 300px;
-  display:flex;
-  flex-direction:column;
-  gap:30px;
-  word-spacing:2px;
-  padding:40px 0px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  word-spacing: 2px;
+  padding: 40px 0px 0px 30px;
 }
-.Team-Card-Intro h1{
-  font:42px lato,sans-serif;
-   line-height:50px;
+
+.Team-Card-Intro h1 {
+  font: 42px lato, sans-serif;
+  line-height: 50px;
 }
-.Team-Card-Intro p{
-  font:16px hebo,sans-serif;
+
+.Team-Card-Intro p {
+  font: 16px hebo, sans-serif;
+  color: #666666;
+  line-height: 25px;
+}
+
+.Team-Button {
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  letter-spacing: 1px;
+  font: 16px sans-serif;
+}
+.MemberName{
+  color:#181818;
+font:18px lato,sans-serif;
+
+}
+.Designation{
   color:#666666;
-  line-height:25px;
+font:14px hebo,sans-serif;
 }
-.Team-Button{
-  color:white;
-  background-color:black;
-  border:1px solid black;
-  letter-spacing:1px;
-  font:16px sans-serif;
+
+
+.Social-Icons {
+  position: absolute;
+  left: 50%;
+  bottom: 80px;
+  transform: translateX(-50%) translateY(30px);
+
+  display: flex;
+  gap: 12px;
+
+  opacity: 0;
+  transition: 0.4s ease;
+
+  z-index: 2;
+}
+
+.Social-Icons i {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+
+  background-color: #bc9565;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.Team-Card:hover::before {
+  opacity: 1;
+}
+
+.Team-Card:hover .Social-Icons {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-100px);
+}
+.TeamI{
+
+  transform:0.5s ease;
+}
+.TeamI:hover{
+ background-color:black;
 }
