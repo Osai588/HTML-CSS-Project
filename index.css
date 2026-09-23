@@ -564,14 +564,16 @@ Button:hover {
   letter-spacing: 1px;
   font: 16px sans-serif;
 }
-.MemberName{
-  color:#181818;
-font:18px lato,sans-serif;
+
+.MemberName {
+  color: #181818;
+  font: 18px lato, sans-serif;
 
 }
-.Designation{
-  color:#666666;
-font:14px hebo,sans-serif;
+
+.Designation {
+  color: #666666;
+  font: 14px hebo, sans-serif;
 }
 
 
@@ -612,10 +614,46 @@ font:14px hebo,sans-serif;
   opacity: 1;
   transform: translateX(-50%) translateY(-100px);
 }
-.TeamI{
 
-  transform:0.5s ease;
+.TeamI {
+
+  transform: 0.5s ease;
 }
-.TeamI:hover{
- background-color:black;
+
+.TeamI:hover {
+  background-color: black;
+}
+
+.Clients-Section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  width: 100%;
+  background-color: #ececec;
+  height: 200px;
+
+}
+
+.Client-Logo img {
+  height: 63px;
+  width: 163px;
+  opacity: 0.5;
+  animation: marquee 5s linear infinite;
+}
+
+.Client-Logo img:hover {
+  opacity: 1;
+}
+
+@keyframes marquee {
+
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+
 }
