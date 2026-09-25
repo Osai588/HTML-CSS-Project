@@ -956,3 +956,35 @@ textarea:hover {
 .contact span:hover{
 color:white;
 }
+
+.Footer{
+  display:flex;
+  flex-direction:column;
+  gap:70px;
+  justify-content:center;
+  align-items: center;
+}
+.Footer-Body{
+  display:flex;
+  justify-content:start;
+  gap:200px;
+}
+.Footer-Other-Pages{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+.Footer-Quick-Links{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+.Footer-Latest-Projects{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+.Images{
+  display:flex;
+  flex-wrap:wrap;
+}
