@@ -737,7 +737,7 @@ Button:hover {
 }
 
 .How-We-Work-Testimonials img {
-  height: 500px;
+  height: 700px;
   width: 50%;
 }
 
@@ -847,4 +847,112 @@ Button:hover {
 
 span {
   color: #666666
+}
+
+.Get-In-Touch {
+  display: flex;
+  width: 100%;
+  background-color: #181818;
+  height: 1000px;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  margin-top:-100px;
+}
+
+.Contact-Info {
+  display: flex;
+  flex-direction: column;
+  height: 575px;
+  width: 573px;
+
+  gap: 70px;
+  padding-top: 70px;
+}
+
+.Contact-items {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font: 16px hebo,sans-serif;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+}
+
+.Contact-Form {
+  display: flex;
+  flex-direction: column;
+  height: 575px;
+  width: 573px;
+  background-color: #ffff;
+  gap:30px;
+  align-items: center;
+  justify-content: center;
+  animation:Form 2s ease;
+}
+@keyframes Form {
+  from{
+      transform: translateX(300px);
+  }
+  to{
+     transform:translateX(0px);
+  }
+  
+}
+
+input {
+  width: 400px;
+  height: 50px;
+  padding: 6px 12px 6px 30px;
+  color: white;
+}
+
+textarea {
+  width: 400px;
+  height: 100px;
+  padding: 6px 12px 6px 30px;
+}
+
+.First {
+  color: #ffff;
+  font: 20px lato, sans-serif;
+}
+.Form-Button{
+  background-color:black;
+  margin-left :-200px;
+  border:2px solid black;
+}
+
+placeholder {
+  text-align: center;
+}
+
+.contact-item h1 {
+  color: #ffff;
+  font: 42px lato, sans-serif;
+}
+
+.contact-item p {
+  color: #666666;
+  font: 16px hebo, sans-serif;
+}
+
+.contact i {
+  color: white;
+}
+
+input:hover {
+  border: 2px solid black;
+}
+
+textarea:hover {
+  border: 2px solid black;
+}
+.contact span:hover{
+color:white;
 }
